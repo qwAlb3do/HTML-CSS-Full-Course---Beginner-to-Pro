@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pookeii sale</title>
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            align-content: center;
+            text-align: center;
+            background-color: #a1a2a4;
+        }
+
+        .img-con img{
+            width: 250px;
+            height: 250px;
+        }
+
+        .sale-rate {
+            padding: 4px 6px;
+            position: absolute;
+            top: 12px;
+            right: 0;
+            background-color: #000;
+            color: #fff;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .sale-rate span {
+            font-size: 16px;
+        }
+
+        .img-footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 75%;
+            background-color: #ffffffaa;
+            align-content: center;
+            text-align: center;
+            z-index: -10;
+            transition: all 2s;
+        }
+
+        .img-footer button {
+            background-color: #ffffffe2;
+            border: 2px solid #606060;
+            padding: 6px 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+        }
+
+        .container:hover {
+            .img-footer {
+                z-index: 10;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img-con">
+            <img src="pookeii.jpg" alt="pookeii">
+        </div>
+        <p class="sale-rate">20% <span>OFF</span></p>
+        <div class="img-footer">
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

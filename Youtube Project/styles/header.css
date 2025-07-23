@@ -1,0 +1,257 @@
+.header {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    padding: 0 16px;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #ffffff;
+}
+
+.header .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 169px;
+}
+
+.header .left .control-dots {
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.header .left .control-dots:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 32px;
+}
+
+.header .left .control-dots-icon {
+    width: 24px;
+    margin: 0 auto;
+}
+
+.header .left .logo {
+    padding: 18px 14px 18px 16px;
+    cursor: pointer;
+}
+
+.header .left .logo-icon {
+    width: 93px;
+}
+
+.header .middle {
+    max-width: 500px;
+    flex: 1;
+    margin: auto 35px auto 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.search-bar {
+    flex: 1;
+    width: 100px;
+    border: 1px solid #d3d3d3;
+    border-bottom-left-radius: 36px;
+    border-top-left-radius: 36px;
+    padding: 10px 0px 10px 16px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+
+.search-bar::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.search-bar:focus {
+    outline: 1px solid #0000ff;
+}
+
+.search-bar-icon {
+    width: 64px;
+    align-content: center;
+    border: 1px solid #d3d3d3;
+    border-bottom-right-radius: 36px;
+    border-top-right-radius: 36px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: all 0.15s;
+    padding: 6px 0px 6px 16px;
+}
+
+.search-bar-icon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.search-bar-img {
+    width: 24px;
+    margin: 0 auto;
+}
+
+.voice-icon {
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: all 0.15s;
+    border-radius: 20px;
+    margin-left: 12px;
+    position: relative;
+    transition: all 0.15s;
+}
+
+.voice-icon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.voice-icon img {
+    width: 24px;
+}
+
+.header .right {
+    width: 213px;
+    align-content: center;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.creator-btn {
+    width: 97.18px;
+}
+
+.header .right .create-btn {
+    width: 72px;
+    display: grid;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 180px;
+    padding: 4px 12px;
+    align-items: center;
+    grid-template-columns: 20px 1fr;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.header .right .create-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header .right .create-btn img {
+    padding: 3px 2px 1.5px 2px;
+    width: 18px;
+}
+
+.header .right .create-btn .name {
+    margin-left: 10px;
+}
+
+.notifi-btn {
+    width: 40px;
+    align-content: center;
+    position: relative;
+    transition: all 0.15s;
+}
+
+.notifi-btn .count {
+    position: absolute;
+    background-color: #e1002d;
+    color: #fff;
+    padding: 1px 4px;
+    font-size: 12px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    top: 0;
+    right: 0;
+}
+
+.notifi-btn-icon {
+    margin: 0 auto;
+    width: 24px;
+}
+
+.profile {
+    width: 60px;
+    text-align: center;
+}
+
+.profile img {
+    width: 32px;
+    border-radius: 180px;
+}
+
+.tool-tip {
+    width: max-content;
+    position: absolute;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #505050ab;
+    padding: 10px 8px;
+    z-index: 20;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.notifi-btn .tool-tip {
+    bottom: -54px;
+    left: -60%;
+}
+
+.voice-icon .tool-tip {
+    left: -55px;
+    bottom: -52px;
+}
+
+.notifi-btn:hover, .voice-icon:hover {
+    .tool-tip {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header .middle {
+        justify-content: flex-end;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .search-bar-icon {
+        width: 24px;
+        border: none;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        background-color: #ffffff;
+        transition: all 0.15s;
+        padding: 8px;
+    }
+
+    .search-bar-icon:hover {
+        border-radius: 24px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .search-bar-img {
+        width: 24px;
+        margin: 0 auto;
+    }
+
+    .voice-icon {
+        background-color: #ffffff;
+        transition: all 0.15s;
+        border-radius: none;
+        margin-left: 0;
+    }
+}

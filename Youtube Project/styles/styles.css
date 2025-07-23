@@ -1,0 +1,160 @@
+.main-div {
+    display: grid;
+    grid-template-columns: none 1fr;
+    column-gap: 12px;
+    padding-left: 12px;
+}
+
+.videos-grid {
+    margin-top: 56px;
+    display: grid;
+    grid-template-rows: 56px 1fr;
+    row-gap: 18px;
+    padding: 0 24px 0 12px;
+    margin-left: 240px;
+}
+
+.suggestion-bar {
+    position: fixed;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-gap: 12px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    z-index: -1;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.suggestion-div {
+    height: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f2f2f2;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: #000000;
+    cursor: pointer;
+    flex: 1fr;
+    white-space: nowrap;
+}
+
+.video-main-grid {
+    margin-top: 88px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 24px;
+    background-color: #fff;
+    z-index: -20;
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.thumbnail:hover {
+    border-radius: 0;
+}
+
+.video-preview {
+    cursor: pointer;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.channel-picture {
+    text-align: left;
+}
+
+.channel-picture img {
+    width: 36px;
+    border-radius: 100px;
+    margin-top: 2px;
+}
+
+.video-info .video-title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-bottom: 8px;
+}
+
+.thumbnail-row {
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.auther {
+    display: flex;
+    height: 14px;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.video-auther {
+    display: block;
+    color: #606060;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 0;
+}
+
+.verify-icon {
+    display: flex;
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #606060;
+    margin-left: 4px;
+    stroke: none;
+    text-size-adjust: 100%;
+    text-wrap-mode: wrap;
+    cursor: pointer;
+}
+
+.video-status {
+    font-size: 14px;
+    font-weight: 400;
+    color: #606060;
+    cursor: pointer;
+}
+
+.video-time {
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 3px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 960px) {
+    .suggestion-bar {
+        position: fixed;
+        left: 12px;
+    }
+    .video-main-grid {
+        position: absolute;
+        left: 0;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 12px;
+        z-index: -100;
+    }
+}
