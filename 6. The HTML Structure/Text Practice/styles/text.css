@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+.video-title {
+    font-weight: bold;
+    font-size: 18px;
+    width: 300px;
+    line-height: 24px;
+    margin: 5px 0px;
+}
+
+.video-stats {
+    margin: 0px 0px;
+    color: #606060;
+    font-size: 14px;
+}
+
+.video-auther {
+    color: #606060;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.verify-icon {
+    width: 18px;
+    height: 18px;
+    color: #606060;
+    margin-top: 18px;
+    margin-left: 8px;
+}
+
+.auther {
+    display: flex;
+}
+
+.video-discription {
+    font-size: 14px;
+    color: #606060;
+    width: 300px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.apple-text {
+    margin-bottom: 50px;
+    font-size: 14px;
+    background-color: rgb(227, 65, 64);
+    color: #ffffff;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.shop-now {
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.shop-now:hover {
+    text-decoration: underline;
+}
