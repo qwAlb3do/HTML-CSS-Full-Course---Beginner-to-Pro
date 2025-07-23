@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid #808080;
+            width: 300px;
+        }
+        
+        .nav-title {
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row;
+            height: 25px;
+        }
+        
+        .notifi {
+            align-items: center;
+        }
+        
+        .msg {
+            align-items: end;
+        }
+
+        .notifi-count {
+            padding: 2px 8px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: rgb(81, 81, 255);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="nav-title home">
+            <div class="title-name">Home</div>
+            <div class="notifi-count">14</div>
+        </div>
+        <div class="nav-title notifi">
+            <div class="title-name">Notification</div>
+            <div class="notifi-count">3</div>
+        </div>
+        <div class="nav-title msg">
+            <div class="title-name">Messages</div>
+            <div class="notifi-count">5</div>
+        </div>
+    </div>
+</body>
+
+</html>

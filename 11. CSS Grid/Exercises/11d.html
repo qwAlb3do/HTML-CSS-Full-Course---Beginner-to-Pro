@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .main-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        .container {
+            border: 1px solid #373737;
+            border-radius: 5px;
+        }
+
+        .image {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        .profile-image {
+            width: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        .details {
+            padding: 10px;
+            display: grid;
+            grid-template-rows: 16px 1fr 1fr;
+            row-gap: 6px;
+        }
+
+        .friends-div {
+            display: grid;
+            grid-template-columns: 32px 1fr;
+        }
+
+        .friends-div img {
+            width: 24px;
+            border-radius: 18px;
+            align-self: center;
+        }
+
+        .name {
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0px 0 6px 0;
+        }
+
+        .friends {
+            font-size: 13px;
+            color: #606060;
+            align-self: center;
+        }
+
+        .add-friend {
+            display: block;
+            width: 100%;
+            background-color: #1877F2;
+            border: 1px solid #1877F2;
+            color: #ffffff;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="container">
+            <div class="image">
+                <img class="profile-image" src="cappy-1.jpg" alt="World cutest animal ever">
+            </div>
+            <div class="details">
+                <div class="name-div">
+                    <p class="name">Thug Cappy</p>
+                </div>
+                <div class="friends-div">
+                    <img src="cappy.jpg">
+                    <p class="friends">
+                        99 mutual friends
+                    </p>
+                </div>
+                <div class="btn-div">
+                    <button class="add-friend">
+                        Add Friend
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image">
+                <img class="profile-image" src="cappy-2.jpg" alt="World cutest animal ever">
+            </div>
+            <div class="details">
+                <div class="name-div">
+                    <p class="name">She Cappy</p>
+                </div>
+                <div class="friends-div">
+                    <img src="cappy.jpg">
+                    <p class="friends">
+                        5 mutual friends
+                    </p>
+                </div>
+                <div class="btn-div">
+                    <button class="add-friend">
+                        Add Friend
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image">
+                <img class="profile-image" src="cappy-3.jpg" alt="World cutest animal ever">
+            </div>
+            <div class="details">
+                <div class="name-div">
+                    <p class="name">Tech Cappy</p>
+                </div>
+                <div class="friends-div">
+                    <img src="cappy.jpg">
+                    <p class="friends">
+                        10 mutual friends
+                    </p>
+                </div>
+                <div class="btn-div">
+                    <button class="add-friend">
+                        Add Friend
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

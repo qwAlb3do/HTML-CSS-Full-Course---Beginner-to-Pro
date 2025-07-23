@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Practice</title>
+        <style>
+            .main-1 {
+                display: grid;
+                grid-template-columns: 100px 100px;
+                grid-template-rows: 100px 100px;
+                margin-bottom: 20px;
+            }
+
+            .main-2 {
+                display: grid;
+                grid-template-columns: 100px 100px 100px;
+                grid-template-rows: 100px 100px;
+                margin-bottom: 20px;
+            }
+
+            .main-3 {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 50px;
+                margin-bottom: 20px;
+            }
+
+            .main-4 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 100px 100px;
+                column-gap: 10px;
+                row-gap: 10px;
+            }
+
+            .main-4 div {
+                border-radius: 10px;
+                margin-bottom: 100px;
+            }
+
+            .test {
+                width: 200px;
+                display: inline-block;
+            }
+
+            .test img {
+                display: block;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-1">
+            <div style="background-color: lightblue;" class="">div 1</div>
+            <div style="background-color: lightcoral;" class="">div 2</div>
+            <div style="background-color: lightgreen;" class="">div 1</div>
+            <div style="background-color: lightpink;" class="">div 2</div>
+        </div>
+
+        <div class="main-2">
+            <div style="background-color: lightblue;" class="">div 1</div>
+            <div style="background-color: lightcoral;" class="">div 2</div>
+            <div style="background-color: lightgreen;" class="">div 1</div>
+            <div style="background-color: lightpink;" class="">div 2</div>
+        </div>
+
+        <div class="main-3">
+            <div style="background-color: lightblue;" class="">div 1</div>
+            <div style="background-color: lightcoral;" class="">div 2</div>
+        </div>
+
+        <div class="main-4">
+            <div style="padding: 20px; background-color: lightblue;" class="">div 1</div>
+            <div style="padding: 20px; background-color: lightcoral;" class="">div 2</div>
+            <div style="padding: 20px; background-color: lightgreen;" class="">div 1</div>
+            <div style="padding: 20px; background-color: lightgray;" class="">div 1</div>
+            <div style="padding: 20px; background-color: lightsalmon;" class="">div 2</div>
+            <div style="padding: 20px; background-color: lightslategray;" class="">div 1</div>
+        </div>
+
+        <div class="test">
+            <img src="cappy-3.jpg" alt="">
+            <div class="info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit recusandae eos repellendus animi quam voluptas, nam soluta, non, omnis quisquam aut aliquam amet. Asperiores ullam libero accusamus deserunt necessitatibus!
+            </div>
+        </div>
+
+        <div class="test">
+            <img src="cappy-3.jpg" alt="">
+            <div class="info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum fugit recusandae eos repellendus animi quam voluptas, nam soluta, non, omnis quisquam aut aliquam amet. Asperiores ullam libero accusamus deserunt necessitatibus!
+            </div>
+        </div>
+    </body>
+</html>
